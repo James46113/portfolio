@@ -3,8 +3,8 @@
         <v-card-title class="mb-n3">{{ title }}</v-card-title>
         <v-card-subtitle>{{ date }}</v-card-subtitle>
         <v-row class="ma-3">
-            <v-col cols="5">
-                <v-img :src="imageUrl"/>
+            <v-col cols="5" v-if="hasImg">
+                <v-img :src="imgUrl"/>
             </v-col>
             <v-col>
                 <v-card-text>{{ description }}</v-card-text>
@@ -14,11 +14,12 @@
 </template>
 
 <script setup lang="ts">
-    defineProps({
+    const props = defineProps({
         title: String,
         date: String,
         imageUrl: String,
         description: String,
+        hasImg: Boolean
     });
-
+    const imgUrl = new URL(props.imageUrl!, import.meta.url).href;
 </script>

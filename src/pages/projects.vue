@@ -6,7 +6,8 @@
             :date="project.date"
             :image-url="project.imageUrl"
             :description="project.description"
-        ></projectCard>
+            :has-img="project.hasImg"
+        />
     </div>
 </template>
 
