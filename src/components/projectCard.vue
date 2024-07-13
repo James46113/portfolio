@@ -1,13 +1,17 @@
 <template>
-    <v-card width="100vh" class="my-4">
-        <v-card-title class="mb-n3">{{ title }}</v-card-title>
-        <v-card-subtitle>{{ date }}</v-card-subtitle>
-        <v-row class="ma-3">
-            <v-col cols="5" v-if="hasImg">
+    <v-card width="140vh" class="my-4">
+        <v-row>
+            <v-col cols="4" v-if="hasImg && index!%2 == 0">
                 <v-img :src="imgUrl"/>
             </v-col>
-            <v-col>
-                <v-card-text>{{ description }}</v-card-text>
+            <v-col v-if="index!%2 == 0">
+                <project-card-description :title="title" :date="date" :tags="tags" :description="description"/>
+            </v-col>
+            <v-col v-if="index!%2 == 1">
+                <project-card-description :title="title" :date="date" :tags="tags" :description="description"/>
+            </v-col>
+            <v-col cols="4" v-if="imgUrl && index!%2 == 1">
+                <v-img :src="imgUrl"/>
             </v-col>
         </v-row>
     </v-card>
@@ -19,7 +23,14 @@
         date: String,
         imageUrl: String,
         description: String,
-        hasImg: Boolean
+        hasImg: Boolean,
+        tags: Array,
+        index: Number,
     });
     const imgUrl = new URL(props.imageUrl!, import.meta.url).href;
+    //const imgUrl = "/" + props.imageUrl;
 </script>
+
+<style scoped>
+
+</style>
