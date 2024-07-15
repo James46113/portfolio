@@ -1,0 +1,33 @@
+{
+    "rewrites": [
+      {
+        "source": "/index.html",
+        "destination": "/index.html"
+      },
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "file",
+            "value": "index.html"
+          }
+        ],
+        "destination": "/index.html"
+      },
+      {
+        "source": "/(.*)",
+        "has": [
+          {
+            "type": "directory",
+            "value": "index.html"
+          }
+        ],
+        "destination": "/index.html"
+      },
+      {
+        "source": "/(.*)",
+        "destination": "/index.html"
+      }
+    ]
+  }
+  
