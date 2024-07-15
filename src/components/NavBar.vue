@@ -5,7 +5,7 @@ import { RouterLink } from 'vue-router';
 <template>
     <v-app-bar>
         <router-link :to="{ path: '/' }">
-            <v-btn class="mx-6" style="color:#ffffff; font-size: large;">James Caroe</v-btn>
+            <v-btn style="color:#ffffff; font-size: large;">James Caroe</v-btn>
         </router-link>
         <router-link :to="{ path: '/' }"> 
             <v-btn style="color:#ffffff" text="Home"/>
