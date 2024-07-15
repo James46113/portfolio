@@ -32,7 +32,7 @@
         {
             "title": "CIISEC Cyber Security EPQ",
             "date": "2023-24",
-            "description": "\"Is it easier to evade detection and blocking by controlling a Command and Control botnet using social media rather than a traditional Command and Control server?\" <br/><br/>This was the question I set out to answer in <a target='_blank' rel='noopener noreferrer' href='/JPX9778 Essay 23-24 UTC OLP.pdf'>my report</a>. I researched online using a variety of academic papers and articles, and came to the conclusion that it does make it easier to evade detection and blocking by using social media. <br/><br/>The EPQ was with <a target='_blank' rel='noopener noreferrer' href='https://www.ciisec.org/development-hub/cyberepq/'>CIISEC</a> (Chartered Institute of Information Security) and it involved completing modules on incidence response management and security testing amongst other things.<br/>",
+            "description": "\"Is it easier to evade detection and blocking by controlling a Command and Control botnet using social media rather than a traditional Command and Control server?\" <br/><br/>This was the question I set out to answer in <a target='_blank' rel='noopener noreferrer' href='/James-Caroe-Cyber-Security-EPQ.pdf'>my report</a>. I researched online using a variety of academic papers and articles, and came to the conclusion that it does make it easier to evade detection and blocking by using social media. <br/><br/>The EPQ was with <a target='_blank' rel='noopener noreferrer' href='https://www.ciisec.org/development-hub/cyberepq/'>CIISEC</a> (Chartered Institute of Information Security) and it involved completing modules on incidence response management and security testing amongst other things.<br/>",
             "tags": [
                 "Cyber Security"
             ],
@@ -55,7 +55,7 @@
         {
             "title": "TCP Chatroom",
             "date": "2020",
-            "description": "I made a chatroom app using python and network sockets. I created a server that managed all the connections and sent messages out to everyone when they were received. The clients could connect and send messages. The clients would receive desktop notifications when they received messages and weren't active. There were a variety of colour themes available for the clients which they could choose from, or create their own.",
+            "description": "I made a chatroom app using python. The server manages all the connections and sends messages to every client when received. The clients connect and send messages. They receive desktop notifications inactive and messages are recieved. There are a variety of colour themes for the clients, or they could create their own.",
             "tags": [
                 "Python",
                 "Networking"

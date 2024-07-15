@@ -1,7 +1,7 @@
 <template>
     <div class="home">
         <v-card-title class="mb-7" style="font-size: 2em;">{{ tag + " Projects" }}</v-card-title>
-        <v-card-text v-if="isMobile" style="text-align: center; font-style: italic;">To view images, vist webpage on desktop</v-card-text>
+        <v-card-text v-if="isMobile" style="text-align: center; font-style: italic;">To view images, visit webpage on desktop</v-card-text>
         <v-btn v-if="tag !== ''" class="pa-1 mb-3" style="background-color: #206060;" @click="resetTags()">{{ tag + " |  ✕"}}</v-btn>
         <projectCard
             v-for="(project, index) in allProjectsRef"
